@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "instascan": "^1.0.0"
+  },
+  "devDependencies": {
+    "html5-qrcode": "^2.3.8"
+  }
+}

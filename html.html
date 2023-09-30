@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Scanner</title>
+</head>
+<body>
+    <video id="qr-video" playsinline autoplay></video>
+    <canvas id="qr-canvas" style="display: none;"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@2/dist/jsQR.js"></script>
+    <script>
+        const video = document.getElementById('qr-video');
+        const canvasElement = document.getElementById('qr-canvas');
+        const canvas = canvasElement.getContext('2d');
+
+        async function setupCamera() {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            return new Promise((resolve) => {
+                video.onloadedmetadata = () => {
+                    resolve(video);
+                };
+            });
+        }
+
+        async function scanQRCode() {
+            const video = await setupCamera();
+            video.play();
+
+            requestAnimationFrame(tick);
+
+            function tick() {
+                if (video.readyState === video.HAVE_ENOUGH_DATA) {
+                    canvasElement.height = video.videoHeight;
+                    canvasElement.width = video.videoWidth;
+                    canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+                    const imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+                    const code = jsQR(imageData.data, imageData.width, imageData.height);
+                    if (code) {
+                        alert('QR Code detected: ' + code.data);
+                    }
+                }
+                requestAnimationFrame(tick);
+            }
+        }
+
+        scanQRCode();
+    </script>
+</body>
+</html>
