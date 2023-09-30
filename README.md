@@ -3,9 +3,8 @@
 
 * [Composer](https://getcomposer.org/)
 * PHP versi 7.4.1
-Download phpspreadsheet untuk laporan dan import file excel
+* Install dependencies dengan cara menjalankan perintah berikut di terminal:
 
 ```bash
   composer install
 ```
-    
