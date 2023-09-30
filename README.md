@@ -1,6 +1,11 @@
-# Update_Absen_guru
+# CI 3 Absensi Guru
+## Persyaratan
 
-Updated Reps From Fabiann277
+* [Composer](https://getcomposer.org/)
+* PHP versi 7.4.1
+Download phpspreadsheet untuk laporan dan import file excel
 
-- add absensi qr
-- add update username
+```bash
+  composer install
+```
+    
