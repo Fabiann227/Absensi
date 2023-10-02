@@ -148,15 +148,11 @@ function checkTime() {
 
     // Batas waktu untuk pagi (7 pagi sampai 9 pagi)
     const morningStart = 7;
-    const morningEnd = 9;
+    const morningEnd = 18;
 
-    // Batas waktu untuk sore (14 siang sampai 17 sore)
-    const afternoonStart = 14;
-    const afternoonEnd = 17;
 
     // Memeriksa apakah waktu saat ini berada dalam batas waktu yang diizinkan
-    if ((currentHour >= morningStart && currentHour <= morningEnd) ||
-        (currentHour >= afternoonStart && currentHour <= afternoonEnd)) {
+    if ((currentHour >= morningStart && currentHour <= morningEnd)) {
         // Waktu mencukupi, hilangkan pesan kesalahan
         document.getElementById('scan-message').innerHTML = "";
         return true;
