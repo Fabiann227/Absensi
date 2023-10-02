@@ -65,5 +65,19 @@ class GuruManage extends CI_Controller {
       $this->load->view('guru_manage/layouts/footer');
       $this->load->view('laporan/script');
     }
+
+	public function laporan_bulan()
+    {
+        if ($this->session->userdata('role') != 'Guru Manage') {
+          redirect('','refresh');
+        }
+
+        $this->load->view('guru_manage/layouts/meta');
+        $this->load->view('guru_manage/layouts/navbar');
+        $this->load->view('guru_manage/layouts/sidebar');
+        $this->load->view('guru_manage/laporan/bulan');
+        $this->load->view('guru_manage/layouts/footer');
+        $this->load->view('guru_manage/laporan/script');
+    }
 	//PEPELEG end
 }
