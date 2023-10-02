@@ -51,6 +51,23 @@ $segmen3 = $this->uri->segment(3);
               <p>Absen Pulang</p>
             </a>
           </li>
+          <li class="nav-item <?php if ($segmen2 == 'laporan_bulan') {echo 'menu-open';} ?>">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Cetak Laporan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo site_url('gurumanage/laporan_bulan'); ?>" class="nav-link <?php if ($segmen1 == 'gurumanage' && $segmen2 == 'laporan_bulan') {echo 'active';} ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bulan</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-header">Account</li>
           <li class="nav-item">
             <a href="<?php echo site_url(); ?>login/change_password" class="nav-link">
