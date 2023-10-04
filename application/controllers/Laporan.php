@@ -619,6 +619,7 @@ class Laporan extends CI_Controller {
                       <thead>
                         <tr>
                           <th style="width: 150px;">Absensi</th>
+                          <th style="width: 150px;">Waktu Absen</th>
                           <th style="width: 250px;">Keterangan Lain</th>
                         </tr>
                       </thead>
@@ -629,6 +630,8 @@ class Laporan extends CI_Controller {
             {
                   $data .= '<tr><td>';
                   $data .= $laporan->status_absen;
+                  $data .= '</td><td>';
+                  $data .= $laporan->waktu_absen;
                   $data .= '</td><td>';
                   $data .= $laporan->keterangan;
                   $data .= '</td></tr>';
