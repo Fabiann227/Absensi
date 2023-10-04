@@ -85,7 +85,7 @@
                 <tbody>
                   <?php $no = 1; ?>
                   <?php 
-                      $absensi_guru = $this->mlaporan->absensi_harian_guru($row->kelas, TODAY_DATE);
+                      $absensi_guru = $this->mlaporan->absensi_harian_guru($row->nama_guru, TODAY_DATE);
                       foreach ($absensi_guru as $laporan): 
                   ?>
                   <tr>
