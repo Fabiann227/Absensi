@@ -148,17 +148,17 @@
       var date = $(this).val();
 
       $.ajax({
-        url: '<?php echo site_url(); ?>laporan/jumlah_kelas_sudah_absen/' + date,
+        url: '<?php echo site_url(); ?>laporan/jumlah_guru_sudah_absen/' + date,
         type: 'GET',
         data: { date: date },
         success: function(result) {
-          var infoLaporan = parseInt(result) + " Kelas Belum Absen";
+          var infoLaporan = parseInt(result) + " Guru Belum Absen";
           $('#infoLaporan').val(infoLaporan);
         }
       });
 
       $.ajax({
-        url: '<?php echo site_url(); ?>laporan/laporanHari',
+        url: '<?php echo site_url(); ?>laporan/laporanHari_guru',
         type: 'post',
         data: {date:date},
         dataType: 'json',

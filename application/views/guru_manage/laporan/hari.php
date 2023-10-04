@@ -47,7 +47,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <div class="input-group date" id="" data-target-input="nearest">
-                  <input id="infoLaporan" type="text" class="form-control datetimepicker-input" value="<?php echo $sudah_absen ?> Kelas Belum Absen Hari ini" readonly>
+                  <input id="infoLaporan" type="text" class="form-control datetimepicker-input" value="<?php echo $guru_sudah_absen ?> Guru Belum Absen Hari ini" readonly>
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                   </div>
@@ -62,13 +62,13 @@
         </div>
       </div>
       <div id="laporanHari">
-        <?php foreach ($kelas as $row): ?>
+        <?php foreach ($nama_guru as $row): ?>
         <div class="card card-default">
           <div class="container-fluid">
             <div class="card-header">
-              <h3 class="card-title" style="font-family: 'Quicksand', sans-serif; font-weight: bold;"><?= $row->kelas ?></h3>
+              <h3 class="card-title" style="font-family: 'Quicksand', sans-serif; font-weight: bold;"><?= $row->nama_guru ?></h3>
               <div class="card-tools">
-                <a href="#" class="btn btn-tool open-modal" data-kelas="<?php echo str_replace(' ', '-', $row->kelas); ?>" data-tanggal="<?php echo TODAY_DATE; ?>">
+                <a href="#" class="btn btn-tool open-modal" data-kelas="<?php echo str_replace(' ', '-', $row->nama_guru); ?>" data-tanggal="<?php echo TODAY_DATE; ?>">
                   <i class="fas fa-camera"></i>
                 </a>
               </div>
@@ -78,8 +78,6 @@
               <table border="all" style="border-collapse: collapse;" class="table table-hover table-bordered custom-table">
                 <thead>
                   <tr>
-                    <th style="width: 10px;">No</th>
-                    <th style="width: 500px;">Nama</th>
                     <th style="width: 150px;">Absensi</th>
                     <th style="width: 250px;">Keterangan Lain</th>
                   </tr>
@@ -87,12 +85,10 @@
                 <tbody>
                   <?php $no = 1; ?>
                   <?php 
-                      $absensi_kelas = $this->mlaporan->absensi_harian($row->kelas, TODAY_DATE);
-                      foreach ($absensi_kelas as $laporan): 
+                      $absensi_guru = $this->mlaporan->absensi_harian_guru($row->kelas, TODAY_DATE);
+                      foreach ($absensi_guru as $laporan): 
                   ?>
                   <tr>
-                    <td ><?= $no++ ?></td>
-                    <td ><?= $laporan->nama_guru ?></td>
                     <td ><?= $laporan->status_absen ?></td>
                     <td ><?= $laporan->keterangan ?></td>
                   </tr>
