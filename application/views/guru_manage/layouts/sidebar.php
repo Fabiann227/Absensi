@@ -51,7 +51,7 @@ $segmen3 = $this->uri->segment(3);
               <p>Absen Pulang</p>
             </a>
           </li>
-          <li class="nav-item <?php if ($segmen2 == 'laporan_bulan') {echo 'menu-open';} ?>">
+          <li class="nav-item <?php if ($segmen2 == 'laporan_hari' || $segmen2 == 'laporan_bulan') {echo 'menu-open';} ?>">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
@@ -60,6 +60,12 @@ $segmen3 = $this->uri->segment(3);
               </p>
             </a>
             <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="<?php echo site_url('gurumanage/laporan_hari'); ?>" class="nav-link <?php if ($segmen1 == 'gurumanage' && $segmen2 == 'laporan_hari') {echo 'active';} ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hari</p>
+                </a>
+              </li>
               <li class="nav-item">
                 <a href="<?php echo site_url('gurumanage/laporan_bulan'); ?>" class="nav-link <?php if ($segmen1 == 'gurumanage' && $segmen2 == 'laporan_bulan') {echo 'active';} ?>">
                   <i class="far fa-circle nav-icon"></i>

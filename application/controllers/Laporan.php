@@ -585,6 +585,62 @@ class Laporan extends CI_Controller {
     }
 
     // pepeleg start
+    public function jumlah_guru_sudah_absen($tanggal)
+    {
+      $date = $this->input->get('date');
+
+      $result = $this->mabsensi->jumlah_guru() - $this->mabsensi->j_guru_sudah_absen($date);
+      
+      echo $result;
+    }
+    public function laporanHari_guru()
+    {
+      $tanggal = $_POST['date'];
+      $data = '';
+      $guru = $this->mlaporan->guru_sudah_absen($tanggal);
+      foreach ($guru as $row) 
+      {
+            $data .='<div class="card card-default">
+                  <div class="container-fluid">
+                    <div style="text-align:center" class="card-header">
+                      <h3 class="card-title">';
+            $data .= $row->nama_guru;
+            
+            $data .='</h3>
+                    <div class="card-tools">
+                      <a href="' . site_url('laporan/lihat_bukti/' . str_replace(' ', '-', $row->nama_guru) . '/' . $tanggal) . '" class="btn btn-tool">
+                          <i class="fas fa-file-image"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="table-responsive">
+                    <table border="all" style="border-collapse: collapse;" class="table table-hover table-bordered custom-table">
+                      <thead>
+                        <tr>
+                          <th style="width: 150px;">Absensi</th>
+                          <th style="width: 150px;">Waktu Absen</th>
+                          <th style="width: 250px;">Keterangan Lain</th>
+                        </tr>
+                      </thead>
+                      <tbody>';
+            $no = 1;
+            $absensi_guru = $this->mlaporan->absensi_harian_guru($row->nama_guru, $tanggal);
+            foreach ($absensi_guru as $laporan) 
+            {
+                  $data .= '<tr><td>';
+                  $data .= $laporan->status_absen;
+                  $data .= '</td><td>';
+                  $data .= $laporan->waktu_absen;
+                  $data .= '</td><td>';
+                  $data .= $laporan->keterangan;
+                  $data .= '</td></tr>';
+              }
+              $data .= '</tbody></table></div></div></div>';
+      }
+      echo json_encode($data);
+    }
+
     public function cetak_laporan_guru()
     {
       $bulan = $_POST['selectedMonth'];
