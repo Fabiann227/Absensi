@@ -116,9 +116,9 @@
           <!-- small card -->
           <div class="small-box bg-warning">
             <div class="inner">
-              <h3><?= $sudah_absen ?></h3>
+              <h3><?=$guru_sudah_absen ?></h3>
 
-              <p>Kelas Sudah Absen</p>
+              <p>Guru Sudah Absen</p>
             </div>
             <div class="icon">
               <i class="fas fa-table"></i>
@@ -133,9 +133,9 @@
           <!-- small card -->
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3><?= $kelas - $sudah_absen ?></h3>
+              <h3><?= $guru - $guru_sudah_absen ?></h3>
 
-              <p>Kelas Belum Absen</p>
+              <p>Guru Belum Abxsen</p>
             </div>
             <div class="icon">
               <i class="fas fa-table"></i>
