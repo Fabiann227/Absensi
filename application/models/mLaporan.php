@@ -176,6 +176,24 @@ class mLaporan extends CI_Model {
     }
 
     // PEPELEg start
+
+    public function absensi_harian_guru($guru, $tanggal)
+    {
+      $this->db->where('nama_guru', $guru);
+      $this->db->where('tanggal', $tanggal);
+      return $this->db->get('tb_absensi_guru')->result();
+    }
+
+    public function guru_sudah_absen($tanggal)
+    {
+       $this->db->distinct();
+       $this->db->select('nama_guru');
+       $this->db->where('tanggal', $tanggal);
+       $this->db->group_by('nama_guru');
+       $this->db->order_by('nama_guru', 'ASC');
+       return $this->db->get('tb_absensi_guru')->result();
+    }
+
     public function getAbsensiDataByDate_guru($tanggal, $bulan) {
 
         $query = "SELECT

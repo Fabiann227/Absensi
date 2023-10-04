@@ -10,6 +10,15 @@ class mAbsensi extends CI_Model {
         $this->db->where('tanggal', $tanggal);
         return $this->db->count_all_results('tb_absensi');
     }
+    // PEPELEG SATRT
+    public function j_guru_sudah_absen($tanggal)
+    {
+        $this->db->distinct();
+        $this->db->select('nama_guru');
+        $this->db->where('tanggal', $tanggal);
+        return $this->db->count_all_results('tb_absensi_guru');
+    }
+    // PEPELEG END
 
     public function jumlah_kelas()
     {
