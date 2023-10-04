@@ -79,6 +79,7 @@
                 <thead>
                   <tr>
                     <th style="width: 150px;">Absensi</th>
+                    <th style="width: 150px;">Waktu Absen</th>
                     <th style="width: 250px;">Keterangan Lain</th>
                   </tr>
                 </thead>
@@ -90,6 +91,7 @@
                   ?>
                   <tr>
                     <td ><?= $laporan->status_absen ?></td>
+                    <td ><?= $laporan->waktu_absen ?></td>
                     <td ><?= $laporan->keterangan ?></td>
                   </tr>
                   <?php endforeach; ?>
