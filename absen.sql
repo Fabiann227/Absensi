@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 09 Okt 2023 pada 00.49
+-- Waktu pembuatan: 10 Okt 2023 pada 09.23
 -- Versi server: 8.0.30
 -- Versi PHP: 7.4.1
 
@@ -1749,7 +1749,7 @@ INSERT INTO `tb_siswa` (`id`, `nis`, `nisn`, `nama_siswa`, `jk`, `id_kelas`, `na
 (243, '15073', '0083230521', 'VANIETA SARI', 'P', 7, 'X Pem 1'),
 (244, '15074', '0084538123', 'ALMIRA HASTI NURJANAH', 'P', 8, 'X Pem 2'),
 (245, '15075', '0074128891', 'ALVITA KHAIRUNNISA', 'P', 8, 'X Pem 2'),
-(246, '15076', '0092785402', 'ANDIKA WIJAYA PRATAMA', 'L', 8, 'X Lem 2'),
+(246, '15076', '0092785402', 'ANDIKA WIJAYA PRATAMA', 'L', 8, 'X Pem 2'),
 (247, '15077', '0088680522', 'ANISA APRILIA HAIRUDIN', 'P', 8, 'X Pem 2'),
 (248, '15078', '0088551642', 'ANISA MUTIARA', 'P', 8, 'X Pem 2'),
 (249, '15079', '0086154539', 'ARUM KESUMA DEWI', 'P', 8, 'X Pem 2'),
@@ -1757,17 +1757,17 @@ INSERT INTO `tb_siswa` (`id`, `nis`, `nisn`, `nama_siswa`, `jk`, `id_kelas`, `na
 (251, '15081', '0081977514', 'AURA HANA TASYA', 'P', 8, 'X Pem 2'),
 (252, '15082', '0082638007', 'AYU LIYAN SAFITRI', 'P', 8, 'X Pem 2'),
 (253, '15083', '0089482340', 'BAHIRA FIRYAL', 'P', 8, 'X Pem 2'),
-(254, '15084', '0078903892', 'DENDI IRAWAN', 'L', 8, 'X Lem 2'),
-(255, '15085', '0074865071', 'DWI AGUNG ADITAMA', 'L', 8, 'X Lem 2'),
+(254, '15084', '0078903892', 'DENDI IRAWAN', 'L', 8, 'X Pem 2'),
+(255, '15085', '0074865071', 'DWI AGUNG ADITAMA', 'L', 8, 'X Pem 2'),
 (256, '15086', '0079860020', 'DINA JULIAN SAPUTRI', 'P', 8, 'X Pem 2'),
-(257, '15087', '0075217938', 'HAYDEN HERNANDEZ', 'L', 8, 'X Lem 2'),
-(258, '15088', '0081860004', 'HELEN PRATAMA', 'L', 8, 'X Lem 2'),
-(259, '15089', '0073651649', 'IDA BAGUS MAHRONI', 'L', 8, 'X Lem 2'),
+(257, '15087', '0075217938', 'HAYDEN HERNANDEZ', 'L', 8, 'X Pem 2'),
+(258, '15088', '0081860004', 'HELEN PRATAMA', 'L', 8, 'X Pem 2'),
+(259, '15089', '0073651649', 'IDA BAGUS MAHRONI', 'L', 8, 'X Pem 2'),
 (260, '15090', '0081052049', 'MAYANG SAHKILA PUTRI', 'P', 8, 'X Pem 2'),
 (261, '15091', '0084825704', 'MELLIYA SILVI ANGGRAINI', 'P', 8, 'X Pem 2'),
 (262, '15092', '0086076039', 'MIFTA TANIA', 'P', 8, 'X Pem 2'),
 (263, '15093', '0079304589', 'MITA ROHMADIANA', 'P', 8, 'X Pem 2'),
-(264, '15094', '0064178616', 'MUHAMMAD SALMAN ALFARIZI', 'L', 8, 'X Lem 2'),
+(264, '15094', '0064178616', 'MUHAMMAD SALMAN ALFARIZI', 'L', 8, 'X Pem 2'),
 (265, '15095', '0078655427', 'MULIANA SAID', 'P', 8, 'X Pem 2'),
 (266, '15096', '0083746176', 'NADIA ARETHA SALSABILA', 'P', 8, 'X Pem 2'),
 (267, '15097', '0084336328', 'RADITIYA', 'L', 8, 'X Lem 2'),
@@ -2054,7 +2054,7 @@ INSERT INTO `tb_siswa` (`id`, `nis`, `nisn`, `nama_siswa`, `jk`, `id_kelas`, `na
 (548, '15241', '0082208291', 'RIFALDO PUTRA PRATAMA', 'L', 16, 'X PPLG 1'),
 (549, '15242', '0086649557', 'SEVINA ALYA CHOIRUNNISA', 'P', 16, 'X PPPG 1'),
 (550, '15243', '0088022463', 'SULTAN HARAHARA', 'L', 16, 'X PPLG 1'),
-(551, '15244', '0087155540', 'TIARA JUNI ZAHRA', 'P', 16, 'X PPPG 1'),
+(551, '15244', '0087155540', 'TIARA JUNI ZAHRA', 'P', 16, 'X PPLG 1'),
 (552, '15245', '0063765453', 'VIERGIAWAN DELIE AYALA', 'L', 16, 'X PPLG 1'),
 (553, '15246', '0081024098', 'VINCENT AURIGO OSNARD', 'L', 16, 'X PPLG 1'),
 (554, '15247', '9878227261', 'ARIA JAYA KESUMA', 'L', 17, 'X PPLG 2'),
@@ -3959,7 +3959,7 @@ INSERT INTO `tb_users` (`id`, `id_hari`, `nama_hari`, `username`, `password`, `r
 (9, 2, 'Selasa', 'Ni Made Novia Rezkianti', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 119, 'Ni Made Novia Rezkianti, S.T', 'XI ULP 1, XI ULP 2, X ULP 1, X ULP 2, XI Pht 1, XI Pht 2, XI Pht 3, X TJKT 1, X TJKT 2, XII ULP 1, XII ULP 2', NULL),
 (10, 2, 'Selasa', 'Dani Rudiyansah', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 137, 'Dani Rudiyansah, S.Pd.', 'XI Pem 2, XI Pem 3, X Pem 1, X Pem 2, XII PPLG, XI PPLG 1, XI PPLG 2, X PPLG 1, X PPLG 2, XII PHT 1', NULL),
 (11, 2, 'Selasa', 'Yunita Sari', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 148, 'Yunita Sari, S.Pd', 'XI Pem 1, XII TJKT 1, XII TJKT 2, XII TJKT 3, XII TJKT 4, XI TJKT 1, XI TJKT 2, X TJKT 3, XI TJKT 3, X Bus 2', NULL),
-(12, 2, 'Selasa', 'Indri Julianti Afnil', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 56, 'Indri Julianti Afnil, S.Pd', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, XDKV 1, X DKV 2 ', NULL),
+(12, 2, 'Selasa', 'Indri Julianti Afnil', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 56, 'Indri Julianti Afnil, S.Pd', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, X DKV 1, X DKV 2 ', NULL),
 (13, 2, 'Selasa', 'Sandria Febrianti', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 37, 'Sandria Febrianti, S.Si', 'X AKL 1, X AKL 2, X AKL 3, X AKL 4, X AKL 5, XII AKL 1, XII AKL 2, XII AKL 3, XII AKL 4, XII PHT 2, XII PHT 3', NULL),
 (14, 2, 'Selasa', 'Wita Asiyah', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 49, 'Wita Asiyah, S.Pd', 'XI Kul 1, XI Kul 2, X Kul 1, X Kul 2, XII AKL 5, XI Bus, XI AKL 1, XI AKL 2, X Bus 1, XII Kul, XII Bus', NULL),
 (15, 3, 'Rabu', 'Yesi Puspitasari', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 53, 'Yesi Puspitasari, S.Pd', 'X Pht 1, X Pht 2, X Pht 3, X MPLB, XI MPLB, XII PM 1, XII PM 2, XII PM 3, XII TJKT 1, XII MPLB', NULL),
