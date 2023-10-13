@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 10 Okt 2023 pada 09.23
+-- Waktu pembuatan: 13 Okt 2023 pada 03.31
 -- Versi server: 8.0.30
 -- Versi PHP: 7.4.1
 
@@ -3972,7 +3972,7 @@ INSERT INTO `tb_users` (`id`, `id_hari`, `nama_hari`, `username`, `password`, `r
 (22, 4, 'Kamis', 'Mutiara Iwana', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 78, 'Mutiara Iwana S.Pd', 'XI ULP 1, XI ULP 2, X ULP 1, X ULP 2, XI Pht 1, XI Pht 2, XI Pht 3, X TJKT 1, X TJKT 2, XII ULP 1, XII ULP 2', NULL),
 (23, 4, 'Kamis', 'Maryanah', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 138, 'Maryanah, S.Pd.', 'XI Pem 2, XI Pem 3, X Pem 1, X Pem 2, XII PPLG, XI PPLG 1, XI PPLG 2, X PPLG 1, X PPLG 2', NULL),
 (24, 4, 'Kamis', 'Insani Rahmawati', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 102, 'Insani Rahmawati, S.Tr. Par', 'XI Pem 1, XII TJKT 1, XII TJKT 2, XII TJKT 3, XII TJKT 4, XI TJKT 1, XI TJKT 2, X TJKT 3, XI TJKT 3, X Bus 2, XII PHT 1', NULL),
-(25, 4, 'Kamis', 'Putri Auggraini', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 99, 'Putri Auggraini, S.S', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, X DKV 1, X DKV 2, XII PHT 2, XII PHT 3', NULL),
+(25, 4, 'Kamis', 'Putri Anggraini', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 99, 'Putri Auggraini, S.S', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, X DKV 1, X DKV 2, XII PHT 2, XII PHT 3', NULL),
 (26, 4, 'Kamis', 'Nelda Susanti', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 51, 'Nelda Susanti, S.Pd', 'X AKL 1, X AKL 2, X AKL 3, X AKL 4, X AKL 5, XII AKL 1, XII AKL 2, XII AKL 3, XII AKL 4', NULL),
 (27, 4, 'Kamis', 'Citra Haningtyas', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 35, 'Citra Haningtyas, S.Pd', 'XI Kul 1, XI Kul 2, X Kul 1, X Kul 2, XII AKL 5, XI Bus, XI AKL 1, XI AKL 2, X Bus 1, XII Kul, XII Bus', NULL),
 (28, 5, 'Jumat', 'Estianti', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 98, 'Estianti, S.Pd', 'X Pht 1, X Pht 2, X Pht 3, X MPLB, XI MPLB, XII PM 1, XII PM 2, XII PM 3, XII TJKT 1, XII MPLB', NULL),
@@ -3980,7 +3980,7 @@ INSERT INTO `tb_users` (`id`, `id_hari`, `nama_hari`, `username`, `password`, `r
 (30, 5, 'Jumat', 'Heni Ayu Pertiwi', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 36, 'Heni Ayu Pertiwi, S.Si', 'XI Pem 2, XI Pem 3, X Pem 1, X Pem 2, XII PPLG, XI PPLG 1, XI PPLG 2, X PPLG 1, X PPLG 2, XII PHT 1', NULL),
 (31, 5, 'Jumat', 'Ria Handayani', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 81, 'Ria Handayani, S.E', 'XI Pem 1, XII TJKT 2, XII TJKT 3, XII TJKT 4, XI TJKT 1, XI TJKT 2, X Bus 2, X Bus 1, XI Bus, XI Kul 1, XI Kul 2, XII PHT 2, XII PHT 3', NULL),
 (32, 5, 'Jumat', 'Dewi Anggraini', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 120, 'Dewi Anggraini, S.Kom', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, X DKV 1, X DKV 2, XI AKL 1, XI AKL 2, XII Bus', NULL),
-(33, 5, 'Jumat', 'Resliky Thofan', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 21, 'Resliky Thofan D, S.Pd', 'X AKL 1, X AKL 2, X AKL 3, X AKL 4, X AKL 5, XII AKL 1, XII AKL 2, XII AKL 3, XII AKL 4, XII AKL 5, X Kul 1, X Kul 2, XII Kul', NULL),
+(33, 5, 'Jumat', 'Reshky Thofan', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 21, 'Resliky Thofan D, S.Pd', 'X AKL 1, X AKL 2, X AKL 3, X AKL 4, X AKL 5, XII AKL 1, XII AKL 2, XII AKL 3, XII AKL 4, XII AKL 5, X Kul 1, X Kul 2, XII Kul', NULL),
 (34, NULL, NULL, 'Admin Absen', '$2y$10$BUDBxVcEYcqW9qc79Vrw.eIXf8IV1sTvkkD7fDzuTfWHLbkArYsxa', 'Admin', NULL, NULL, NULL, NULL),
 (36, NULL, NULL, 'PEPELEG TEST', '$2y$10$N4mnirrRnp5NA0V7BUvs.OBOLjdcTL9NjXBOj3AhhQK2dF.5T48fy', 'Guru Piket', NULL, NULL, NULL, NULL),
 (37, NULL, NULL, 'Manage', '$2y$10$RyLTXKHshbf0g.PyGSA.H.3H7aaJsyTq0.oP63MTaaDFUt4icxqcq', 'Guru Manage', NULL, NULL, NULL, NULL),
