@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 13 Okt 2023 pada 03.31
+-- Waktu pembuatan: 17 Okt 2023 pada 09.13
 -- Versi server: 8.0.30
 -- Versi PHP: 7.4.1
 
@@ -3952,7 +3952,7 @@ INSERT INTO `tb_users` (`id`, `id_hari`, `nama_hari`, `username`, `password`, `r
 (2, 1, 'Senin', 'Misna Yunita', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 140, 'Misna Yunita. S.Pd.', 'XI ULP 1, XI ULP 2, X ULP 1, X ULP 2, XI Pht 1, XI Pht 2, XI Pht 3, X TJKT 1, X TJKT 2, XII ULP 1, XII ULP 2', NULL),
 (3, 1, 'Senin', 'Ayu Jayanti', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 112, 'Ayu Jayanti, S.Kom.', 'XI Pem 2, XI Pem 3, X Pem 1, X Pem 2, XII PPLG, XI PPLG 1, XI PPLG 2, X PPLG 1, X PPLG 2, XII PHT 1', NULL),
 (4, 1, 'Senin', 'Santi Noviyana', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 18, 'Santi Noviyana, S.Pd', 'XI Pem 1, XII TJKT 1, XII TJKT 2, XII TJKT 3, XII TJKT 4, XI TJKT 1, XI TJKT 2, X TJKT 3, XI TJKT 3, X Bus 2', NULL),
-(5, 1, 'Senin', 'Chandra Kusuma', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 20, 'Chandra Kusuma, M.Pd', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, XDKV 1, X DKV 2 ', NULL),
+(5, 1, 'Senin', 'Chandra Kusuma', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 20, 'Chandra Kusuma, M.Pd', 'XII DKV 2, XII DKV 1, XI AKL 5, XI AKL 4, XI AKL 3, XI DKV 1, XI DKV 2, X DKV 1, X DKV 2 ', NULL),
 (6, 1, 'Senin', 'Andhita Marcelia', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 22, 'Andhita Marcelia, S.Pd', 'X AKL 1, X AKL 2, X AKL 3, X AKL 4, X AKL 5, XII AKL 1, XII AKL 2, XII AKL 3, XII AKL 4, XII PHT 2, XII PHT 3', NULL),
 (7, 1, 'Senin', 'Carina Aurelia', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 19, 'Carina Aurelia, S.Pd', 'XI Kul 1, XI Kul 2, X Kul 1, X Kul 2, XII AKL 5, XI Bus, XI AKL 1, XI AKL 2, X Bus 1, XII Kul, XII Bus', NULL),
 (8, 2, 'Selasa', 'Sugeng', '$2y$10$oxTNOCipE9QDMf4.Ow5/KeX7sgYASH2vzbg9KuZiMWUda4LpZh1Eq', 'Guru Piket', 97, 'Sugeng, S.Pd', 'X Pht 1, X Pht 2, X Pht 3, X MPLB, XI MPLB, XII PM 1, XII PM 2, XII PM 3, XII TJKT 1, XII MPLB', NULL),
